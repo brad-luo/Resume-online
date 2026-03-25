@@ -95,7 +95,7 @@ function updateActiveNav() {
 }
 
 /* ── Mobile hamburger ────────────────────────────────────── */
-const hamburger = document.getElementById('hamburger');
+const hamburger = document.getElementById('navToggle');
 const navLinks  = document.getElementById('navLinks');
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('open');
@@ -117,7 +117,7 @@ navLinks.querySelectorAll('a').forEach(a => {
     'Next.js Builder',
     'Problem Solver',
   ];
-  const el = document.getElementById('typedText');
+  const el = document.getElementById('typewriter');
   let phraseIdx = 0, charIdx = 0, deleting = false;
 
   function type() {
@@ -160,8 +160,8 @@ const barObserver = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
-          bar.style.width = bar.dataset.width + '%';
+        entry.target.querySelectorAll('.sb-fill').forEach(bar => {
+          bar.style.width = bar.dataset.w + '%';
         });
         barObserver.unobserve(entry.target);
       }
@@ -169,7 +169,7 @@ const barObserver = new IntersectionObserver(
   },
   { threshold: 0.3 }
 );
-document.querySelectorAll('.skill-category').forEach(el => barObserver.observe(el));
+document.querySelectorAll('.skill-cat-card').forEach(el => barObserver.observe(el));
 
 /* ── Smooth scroll ───────────────────────────────────────── */
 document.querySelectorAll('a[href^="#"]').forEach(a => {

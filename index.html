@@ -4,75 +4,67 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brad Luo — Full Stack Developer &amp; AI Enthusiast</title>
-  <meta name="description" content="Brad Luo — Full Stack Developer &amp; AI Enthusiast based in Melbourne, Australia." />
+  <meta name="description" content="Brad Luo is a Full Stack Developer and AI Enthusiast based in Melbourne, Australia." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ── NAVBAR ── -->
+  <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#hero" class="nav-logo">
-        <span class="logo-bracket">&lt;</span>Brad<span class="logo-accent">Luo</span><span class="logo-bracket">/&gt;</span>
+        <span class="logo-bracket">&lt;</span>BL<span class="logo-bracket">/&gt;</span>
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about"    class="nav-link">About</a></li>
         <li><a href="#skills"   class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#contact"  class="nav-link">Contact</a></li>
-        <li>
-          <a href="mailto:xiaoleluo2@gmail.com" class="nav-cta">Hire Me</a>
-        </li>
+        <li><a href="mailto:xiaoleluo2@gmail.com" class="nav-cta">Hire Me</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- ── HERO ── -->
+  <!-- HERO -->
   <section class="hero" id="hero">
     <canvas id="particleCanvas"></canvas>
+    <div class="hero-glow hero-glow--left"></div>
+    <div class="hero-glow hero-glow--right"></div>
     <div class="hero-content">
       <div class="hero-badge">
         <span class="badge-dot"></span>
-        Available for opportunities
+        Available for work &nbsp;&middot;&nbsp; Melbourne, AU
       </div>
       <h1 class="hero-name">
-        <span class="name-first">Brad</span>
-        <span class="name-last gradient-text">Luo</span>
+        <span class="name-line">Brad</span>
+        <span class="name-line gradient-text">Luo</span>
       </h1>
-      <div class="hero-title">
-        <span id="typedText"></span><span class="cursor">|</span>
+      <div class="hero-subtitle">
+        <span class="subtitle-static">I build&nbsp;</span><span class="typewriter" id="typewriter"></span><span class="cursor" id="cursor">|</span>
       </div>
-      <p class="hero-bio">
-        "The miracle of our era is AI. Use AI, harness AI."
-      </p>
-      <div class="hero-meta">
-        <span class="meta-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-          Melbourne, Australia
-        </span>
-        <span class="meta-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          GitHub since 2016
-        </span>
-        <span class="meta-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          bradluo.com
-        </span>
-      </div>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">
-          View My Work
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="mailto:xiaoleluo2@gmail.com" class="btn btn-secondary">
+      <p class="hero-bio">&ldquo;The miracle of our era is AI. Use AI, harness AI.&rdquo;</p>
+      <div class="hero-actions">
+        <a href="mailto:xiaoleluo2@gmail.com" class="btn btn--primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
           Hire Me
         </a>
+        <a href="#projects" class="btn btn--ghost">
+          View Projects
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-value">9+</span><span class="stat-label">Years on GitHub</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><span class="stat-value">5+</span><span class="stat-label">Open Source Projects</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><span class="stat-value">11</span><span class="stat-label">Technologies</span></div>
       </div>
     </div>
     <div class="hero-scroll-hint">
@@ -81,390 +73,343 @@
     </div>
   </section>
 
-  <!-- ── ABOUT ── -->
-  <section class="section about-section" id="about">
+  <!-- ABOUT -->
+  <section class="section" id="about">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">01 / About</span>
-        <h2 class="section-title">Who I Am</h2>
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
       </div>
       <div class="about-grid">
-        <div class="about-text reveal">
-          <p>
-            Hi, I'm <strong>Brad Luo</strong> — a passionate Full Stack Developer and AI enthusiast
-            based in <strong>Melbourne, Australia</strong>. I build modern web applications with
-            clean architecture, great user experience, and a strong emphasis on leveraging
-            cutting-edge AI capabilities.
-          </p>
-          <p>
-            From crafting responsive front-ends with <strong>Next.js &amp; React</strong> to
-            engineering robust back-ends with <strong>Django &amp; Python</strong>, I enjoy
-            bridging the full spectrum of web development. Cloud platforms, workflow automation,
-            and machine learning integrations are my playground.
-          </p>
-          <p>
-            I believe we are living in the AI era — and the developers who thrive will be those
-            who learn to harness it effectively. That drives everything I build.
-          </p>
-          <div class="about-links">
-            <a href="https://github.com/brad-luo" target="_blank" rel="noopener" class="about-link">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              GitHub
+        <div class="about-avatar-wrap reveal">
+          <div class="avatar-card glass">
+            <div class="avatar-ring-outer">
+              <div class="avatar-ring-inner">
+                <div class="avatar-initials">BL</div>
+              </div>
+            </div>
+            <h3 class="avatar-name">Brad Luo</h3>
+            <p class="avatar-role">Full Stack Developer &amp; AI Enthusiast</p>
+            <div class="avatar-meta">
+              <div class="av-meta-item">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Melbourne, AU
+              </div>
+              <div class="av-meta-item">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub since 2016
+              </div>
+            </div>
+            <div class="avatar-stats-row">
+              <div class="av-stat"><span class="av-stat-num">9+</span><span class="av-stat-lbl">Years</span></div>
+              <div class="av-stat"><span class="av-stat-num">5+</span><span class="av-stat-lbl">Projects</span></div>
+              <div class="av-stat"><span class="av-stat-num">11</span><span class="av-stat-lbl">Techs</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="about-body reveal">
+          <p class="about-para">Hi, I'm <strong class="accent">Brad Luo</strong> — a passionate Full Stack Developer and AI enthusiast based in <strong class="accent">Melbourne, Australia</strong>. I build modern web applications and intelligent systems that solve real-world problems.</p>
+          <p class="about-para">My stack spans the full development lifecycle — pixel-perfect front-ends with <strong class="accent">Next.js</strong> and <strong class="accent">React</strong>, robust back-ends powered by <strong class="accent">Django</strong> and <strong class="accent">Python</strong>, and cloud infrastructure on <strong class="accent">GCP</strong>.</p>
+          <p class="about-para">I believe AI is the defining technology of our era, and I actively embrace it both as a tool in my daily workflow and as a domain I continuously study and apply.</p>
+          <div class="about-links-row">
+            <a href="https://github.com/brad-luo" target="_blank" rel="noopener" class="icon-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              brad-luo
             </a>
-            <a href="https://bradluo.com" target="_blank" rel="noopener" class="about-link">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <a href="https://bradluo.com" target="_blank" rel="noopener" class="icon-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
               bradluo.com
             </a>
-            <a href="mailto:xiaoleluo2@gmail.com" class="about-link">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              Email Me
+            <a href="mailto:xiaoleluo2@gmail.com" class="icon-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              xiaoleluo2@gmail.com
             </a>
           </div>
         </div>
-        <div class="about-stats reveal">
-          <div class="stat-card glass">
-            <span class="stat-number gradient-text">8+</span>
-            <span class="stat-label">Years on GitHub</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+      </div>
+      <div class="skill-categories reveal">
+        <div class="skill-cat-card glass">
+          <div class="skill-cat-icon" style="--ic:#f59e0b">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           </div>
-          <div class="stat-card glass">
-            <span class="stat-number gradient-text">10+</span>
-            <span class="stat-label">Technologies</span>
+          <h3 class="skill-cat-name">Frontend</h3>
+          <div class="skill-pill-cloud">
+            <span class="skill-pill">TypeScript</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">Next.js</span>
+            <span class="skill-pill">React</span>
+            <span class="skill-pill">Tailwind CSS</span>
           </div>
-          <div class="stat-card glass">
-            <span class="stat-number gradient-text">5+</span>
-            <span class="stat-label">Key Projects</span>
+        </div>
+        <div class="skill-cat-card glass">
+          <div class="skill-cat-icon" style="--ic:#06b6d4">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           </div>
-          <div class="stat-card glass">
-            <span class="stat-number gradient-text">AU</span>
-            <span class="stat-label">Melbourne Based</span>
+          <h3 class="skill-cat-name">Backend</h3>
+          <div class="skill-pill-cloud">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Django</span>
+            <span class="skill-pill">Java</span>
+          </div>
+        </div>
+        <div class="skill-cat-card glass">
+          <div class="skill-cat-icon" style="--ic:#8b5cf6">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41"/></svg>
+          </div>
+          <h3 class="skill-cat-name">AI / ML</h3>
+          <div class="skill-pill-cloud">
+            <span class="skill-pill">AI/ML</span>
+            <span class="skill-pill">Jupyter Notebook</span>
+          </div>
+        </div>
+        <div class="skill-cat-card glass">
+          <div class="skill-cat-icon" style="--ic:#10b981">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3 class="skill-cat-name">Cloud</h3>
+          <div class="skill-pill-cloud">
+            <span class="skill-pill">GCP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-bars-section reveal">
+        <h3 class="skill-bars-heading">Proficiency</h3>
+        <div class="skill-bars-list" id="skillBars">
+          <div class="sb-item">
+            <div class="sb-header"><span class="sb-name">Python / Django</span><span class="sb-pct">92%</span></div>
+            <div class="sb-track"><div class="sb-fill" data-w="92" style="--c:#6366f1"></div></div>
+          </div>
+          <div class="sb-item">
+            <div class="sb-header"><span class="sb-name">TypeScript / JavaScript</span><span class="sb-pct">88%</span></div>
+            <div class="sb-track"><div class="sb-fill" data-w="88" style="--c:#06b6d4"></div></div>
+          </div>
+          <div class="sb-item">
+            <div class="sb-header"><span class="sb-name">Next.js / React</span><span class="sb-pct">85%</span></div>
+            <div class="sb-track"><div class="sb-fill" data-w="85" style="--c:#8b5cf6"></div></div>
+          </div>
+          <div class="sb-item">
+            <div class="sb-header"><span class="sb-name">AI / ML</span><span class="sb-pct">80%</span></div>
+            <div class="sb-track"><div class="sb-fill" data-w="80" style="--c:#ec4899"></div></div>
+          </div>
+          <div class="sb-item">
+            <div class="sb-header"><span class="sb-name">GCP / Cloud</span><span class="sb-pct">75%</span></div>
+            <div class="sb-track"><div class="sb-fill" data-w="75" style="--c:#10b981"></div></div>
+          </div>
+          <div class="sb-item">
+            <div class="sb-header"><span class="sb-name">Java</span><span class="sb-pct">72%</span></div>
+            <div class="sb-track"><div class="sb-fill" data-w="72" style="--c:#f59e0b"></div></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── SKILLS ── -->
-  <section class="section skills-section" id="skills">
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">02 / Skills</span>
-        <h2 class="section-title">Tech Stack</h2>
-      </div>
-      <div class="skills-categories reveal">
-
-        <div class="skill-category glass">
-          <h3 class="skill-cat-title">
-            <span class="cat-icon">⚡</span> Frontend
-          </h3>
-          <div class="skill-badges">
-            <span class="skill-badge" data-level="95">TypeScript</span>
-            <span class="skill-badge" data-level="92">JavaScript</span>
-            <span class="skill-badge" data-level="90">React</span>
-            <span class="skill-badge" data-level="90">Next.js</span>
-            <span class="skill-badge" data-level="88">Tailwind CSS</span>
-          </div>
-          <div class="skill-bars">
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>TypeScript</span><span>95%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>React / Next.js</span><span>90%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>Tailwind CSS</span><span>88%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-category glass">
-          <h3 class="skill-cat-title">
-            <span class="cat-icon">🐍</span> Backend
-          </h3>
-          <div class="skill-badges">
-            <span class="skill-badge" data-level="93">Python</span>
-            <span class="skill-badge" data-level="90">Django</span>
-            <span class="skill-badge" data-level="75">Java</span>
-          </div>
-          <div class="skill-bars">
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>Python</span><span>93%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="93"></div></div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>Django</span><span>90%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>Java</span><span>75%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-category glass">
-          <h3 class="skill-cat-title">
-            <span class="cat-icon">🤖</span> AI &amp; Cloud
-          </h3>
-          <div class="skill-badges">
-            <span class="skill-badge" data-level="85">AI / ML</span>
-            <span class="skill-badge" data-level="82">GCP</span>
-            <span class="skill-badge" data-level="80">Jupyter</span>
-          </div>
-          <div class="skill-bars">
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>AI / ML</span><span>85%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>GCP</span><span>82%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-bar-label"><span>Jupyter Notebook</span><span>80%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Tech pill cloud -->
-      <div class="tech-cloud reveal">
-        <span class="tech-pill pill-purple">Python</span>
-        <span class="tech-pill pill-blue">Django</span>
-        <span class="tech-pill pill-cyan">TypeScript</span>
-        <span class="tech-pill pill-purple">JavaScript</span>
-        <span class="tech-pill pill-blue">Next.js</span>
-        <span class="tech-pill pill-cyan">React</span>
-        <span class="tech-pill pill-purple">Tailwind CSS</span>
-        <span class="tech-pill pill-blue">Java</span>
-        <span class="tech-pill pill-cyan">GCP</span>
-        <span class="tech-pill pill-purple">AI / ML</span>
-        <span class="tech-pill pill-blue">Jupyter Notebook</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── PROJECTS ── -->
-  <section class="section projects-section" id="projects">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">03 / Projects</span>
-        <h2 class="section-title">Featured Work</h2>
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
       </div>
       <div class="projects-grid">
 
-        <!-- web-tools — featured -->
-        <div class="project-card glass featured reveal">
-          <div class="project-card-inner">
-            <div class="project-top">
-              <div class="project-icon-wrap">
-                <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/brad-luo/web-tools" target="_blank" rel="noopener" aria-label="GitHub">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                </a>
-              </div>
+        <!-- web-tools - featured -->
+        <article class="proj-card proj-card--featured glass reveal">
+          <div class="proj-card-glow"></div>
+          <div class="proj-header">
+            <div class="proj-icon" style="--pc:#6366f1">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
             </div>
-            <span class="project-featured-tag">Featured</span>
-            <h3 class="project-title">web-tools</h3>
-            <p class="project-desc">
-              A modern collection of essential web development tools with secure authentication,
-              configurable permissions, and responsive design. Features 7 tools including a
-              Calendar Dashboard.
-            </p>
-            <ul class="project-highlights">
-              <li>Secure authentication &amp; configurable permissions</li>
-              <li>7 integrated tools including Calendar Dashboard</li>
-              <li>Fully responsive, production-ready design</li>
-            </ul>
-            <div class="project-tags">
-              <span class="tag">Next.js 14</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Tailwind CSS</span>
+            <div class="proj-badges">
+              <span class="proj-badge proj-badge--star">Featured</span>
+              <span class="proj-badge">TypeScript</span>
             </div>
+            <a href="https://github.com/brad-luo/web-tools" target="_blank" rel="noopener" class="proj-gh-link" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
           </div>
-          <div class="project-glow"></div>
-        </div>
+          <h3 class="proj-title">web-tools</h3>
+          <p class="proj-desc">A modern collection of essential web development tools featuring secure authentication, configurable permissions, and fully responsive design. Includes 7 integrated productivity tools including a Calendar Dashboard.</p>
+          <ul class="proj-highlights">
+            <li>Secure authentication &amp; configurable permissions</li>
+            <li>7 integrated tools — Calendar, utilities &amp; more</li>
+            <li>Production-ready, fully responsive</li>
+          </ul>
+          <div class="proj-tech-row">
+            <span class="tech-chip">Next.js 14</span>
+            <span class="tech-chip">TypeScript</span>
+            <span class="tech-chip">Tailwind CSS</span>
+          </div>
+          <div class="proj-stats-row">
+            <div class="ps"><span class="ps-num">7</span><span class="ps-lbl">Tools</span></div>
+            <div class="ps"><span class="ps-num">Auth</span><span class="ps-lbl">Secure</span></div>
+            <div class="ps"><span class="ps-num">Full</span><span class="ps-lbl">Responsive</span></div>
+          </div>
+        </article>
 
         <!-- django-customflow -->
-        <div class="project-card glass reveal">
-          <div class="project-card-inner">
-            <div class="project-top">
-              <div class="project-icon-wrap">
-                <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/brad-luo/django-customflow" target="_blank" rel="noopener" aria-label="GitHub">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                </a>
-              </div>
+        <article class="proj-card glass reveal">
+          <div class="proj-card-glow"></div>
+          <div class="proj-header">
+            <div class="proj-icon" style="--pc:#06b6d4">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
             </div>
-            <h3 class="project-title">django-customflow</h3>
-            <p class="project-desc">
-              Highly customizable workflow engine built on Django. Enables teams to design,
-              manage, and automate complex business processes with configurable state
-              machines and transition rules.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Django</span>
-              <span class="tag">Workflow</span>
-            </div>
+            <span class="proj-badge">Python</span>
+            <a href="https://github.com/brad-luo/django-customflow" target="_blank" rel="noopener" class="proj-gh-link" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
           </div>
-          <div class="project-glow"></div>
-        </div>
+          <h3 class="proj-title">django-customflow</h3>
+          <p class="proj-desc">Highly customizable workflow engine built on Django. Configure states, transitions, and actions to automate complex business processes with ease.</p>
+          <div class="proj-tech-row">
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">Django</span>
+          </div>
+        </article>
 
         <!-- DjangoBlog -->
-        <div class="project-card glass reveal">
-          <div class="project-card-inner">
-            <div class="project-top">
-              <div class="project-icon-wrap">
-                <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/brad-luo/DjangoBlog" target="_blank" rel="noopener" aria-label="GitHub">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                </a>
-              </div>
+        <article class="proj-card glass reveal">
+          <div class="proj-card-glow"></div>
+          <div class="proj-header">
+            <div class="proj-icon" style="--pc:#8b5cf6">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
             </div>
-            <h3 class="project-title">DjangoBlog</h3>
-            <p class="project-desc">
-              A fully-featured personal blogging platform built with Python and Django.
-              Clean content management, tag system, and a polished reading experience.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Django</span>
-              <span class="tag">Blog</span>
-            </div>
+            <span class="proj-badge">Python</span>
+            <a href="https://github.com/brad-luo/DjangoBlog" target="_blank" rel="noopener" class="proj-gh-link" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
           </div>
-          <div class="project-glow"></div>
-        </div>
+          <h3 class="proj-title">DjangoBlog</h3>
+          <p class="proj-desc">Personal blog platform built with Python &amp; Django. Full content management, tagging system, and a polished reading experience.</p>
+          <div class="proj-tech-row">
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">Django</span>
+          </div>
+        </article>
 
         <!-- platform_backend -->
-        <div class="project-card glass reveal">
-          <div class="project-card-inner">
-            <div class="project-top">
-              <div class="project-icon-wrap">
-                <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/brad-luo/platform_backend" target="_blank" rel="noopener" aria-label="GitHub">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                </a>
-              </div>
+        <article class="proj-card glass reveal">
+          <div class="proj-card-glow"></div>
+          <div class="proj-header">
+            <div class="proj-icon" style="--pc:#10b981">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
             </div>
-            <h3 class="project-title">platform_backend</h3>
-            <p class="project-desc">
-              Scalable Python backend platform providing RESTful APIs and core services for
-              modern web and mobile applications. Built for performance and extensibility.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">REST API</span>
-              <span class="tag">Backend</span>
-            </div>
+            <span class="proj-badge">Python</span>
+            <a href="https://github.com/brad-luo/platform_backend" target="_blank" rel="noopener" class="proj-gh-link" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
           </div>
-          <div class="project-glow"></div>
-        </div>
+          <h3 class="proj-title">platform_backend</h3>
+          <p class="proj-desc">Scalable Python backend platform delivering RESTful APIs, authentication, and core data services for modern web and mobile applications.</p>
+          <div class="proj-tech-row">
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">GCP</span>
+          </div>
+        </article>
 
         <!-- Leetcode-practice -->
-        <div class="project-card glass reveal">
-          <div class="project-card-inner">
-            <div class="project-top">
-              <div class="project-icon-wrap">
-                <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/brad-luo/Leetcode-practice" target="_blank" rel="noopener" aria-label="GitHub">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                </a>
-              </div>
+        <article class="proj-card glass reveal">
+          <div class="proj-card-glow"></div>
+          <div class="proj-header">
+            <div class="proj-icon" style="--pc:#f59e0b">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
             </div>
-            <h3 class="project-title">Leetcode-practice</h3>
-            <p class="project-desc">
-              A curated collection of algorithm and data structure solutions in Java.
-              Covers arrays, trees, dynamic programming, graphs, and more.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Java</span>
-              <span class="tag">Algorithms</span>
-              <span class="tag">Data Structures</span>
-            </div>
+            <span class="proj-badge">Java</span>
+            <a href="https://github.com/brad-luo/Leetcode-practice" target="_blank" rel="noopener" class="proj-gh-link" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
           </div>
-          <div class="project-glow"></div>
-        </div>
+          <h3 class="proj-title">Leetcode-practice</h3>
+          <p class="proj-desc">Curated algorithm and data structure solutions in Java, covering arrays, trees, graphs, dynamic programming, and more with clean, well-commented code.</p>
+          <div class="proj-tech-row">
+            <span class="tech-chip">Java</span>
+            <span class="tech-chip">Algorithms</span>
+          </div>
+        </article>
 
       </div>
-
-      <div class="projects-cta reveal">
-        <a href="https://github.com/brad-luo" target="_blank" rel="noopener" class="btn btn-outline">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          See All on GitHub
+      <div class="projects-footer reveal">
+        <a href="https://github.com/brad-luo" target="_blank" rel="noopener" class="btn btn--ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          View all on GitHub
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ── CONTACT ── -->
-  <section class="section contact-section" id="contact">
+  <!-- CONTACT -->
+  <section class="section section--alt" id="contact">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">04 / Contact</span>
-        <h2 class="section-title">Let's Build Something</h2>
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let&rsquo;s <span class="gradient-text">Connect</span></h2>
       </div>
-      <div class="contact-grid">
-        <div class="contact-text reveal">
-          <p>
-            I'm always open to discussing new projects, interesting ideas, or
-            opportunities to be part of your vision. Whether you need a full-stack
-            developer or someone to integrate AI into your product — let's talk.
-          </p>
-          <a href="mailto:xiaoleluo2@gmail.com" class="btn btn-primary hire-btn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            Hire Me — Say Hello
+      <div class="contact-layout">
+        <div class="contact-cta glass reveal">
+          <div class="cta-pulse-wrap">
+            <div class="cta-pulse-ring cta-pulse-ring--1"></div>
+            <div class="cta-pulse-ring cta-pulse-ring--2"></div>
+            <div class="cta-pulse-ring cta-pulse-ring--3"></div>
+            <div class="cta-pulse-core">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            </div>
+          </div>
+          <h3 class="cta-heading">Ready to build something great?</h3>
+          <p class="cta-sub">Whether it's a new project, a collaboration, or a chat about AI — I'm always open.</p>
+          <a href="mailto:xiaoleluo2@gmail.com" class="btn btn--primary btn--lg">
+            Send me an email
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
-        <div class="contact-cards reveal">
-          <a href="mailto:xiaoleluo2@gmail.com" class="contact-card glass">
-            <div class="contact-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <div class="contact-links-col reveal">
+          <a href="mailto:xiaoleluo2@gmail.com" class="contact-link-card glass">
+            <div class="clc-icon" style="--cc:#6366f1">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
             </div>
-            <div class="contact-card-body">
-              <span class="contact-card-label">Email</span>
-              <span class="contact-card-value">xiaoleluo2@gmail.com</span>
+            <div class="clc-text">
+              <span class="clc-label">Email</span>
+              <span class="clc-value">xiaoleluo2@gmail.com</span>
             </div>
+            <svg class="clc-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
-          <a href="https://github.com/brad-luo" target="_blank" rel="noopener" class="contact-card glass">
-            <div class="contact-card-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          <a href="https://github.com/brad-luo" target="_blank" rel="noopener" class="contact-link-card glass">
+            <div class="clc-icon" style="--cc:#8b5cf6">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </div>
-            <div class="contact-card-body">
-              <span class="contact-card-label">GitHub</span>
-              <span class="contact-card-value">@brad-luo</span>
+            <div class="clc-text">
+              <span class="clc-label">GitHub</span>
+              <span class="clc-value">github.com/brad-luo</span>
             </div>
+            <svg class="clc-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
-          <a href="https://bradluo.com" target="_blank" rel="noopener" class="contact-card glass">
-            <div class="contact-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <a href="https://bradluo.com" target="_blank" rel="noopener" class="contact-link-card glass">
+            <div class="clc-icon" style="--cc:#06b6d4">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             </div>
-            <div class="contact-card-body">
-              <span class="contact-card-label">Website</span>
-              <span class="contact-card-value">bradluo.com</span>
+            <div class="clc-text">
+              <span class="clc-label">Website</span>
+              <span class="clc-value">bradluo.com</span>
             </div>
+            <svg class="clc-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
-          <div class="contact-card glass location-card">
-            <div class="contact-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <div class="contact-link-card glass no-hover">
+            <div class="clc-icon" style="--cc:#10b981">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
-            <div class="contact-card-body">
-              <span class="contact-card-label">Location</span>
-              <span class="contact-card-value">Melbourne, Australia</span>
+            <div class="clc-text">
+              <span class="clc-label">Location</span>
+              <span class="clc-value">Melbourne, Australia</span>
             </div>
           </div>
         </div>
@@ -472,15 +417,15 @@
     </div>
   </section>
 
-  <!-- ── FOOTER ── -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <span class="footer-logo">
-          <span class="logo-bracket">&lt;</span>Brad<span class="logo-accent">Luo</span><span class="logo-bracket">/&gt;</span>
-        </span>
-        <p class="footer-quote">"The miracle of our era is AI. Use AI, harness AI."</p>
-        <p class="footer-copy">© 2026 Brad Luo. Built with passion in Melbourne.</p>
+        <a href="#hero" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>BL<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-quote">&ldquo;The miracle of our era is AI. Use AI, harness AI.&rdquo;</p>
+        <p class="footer-copy">&copy; 2026 Brad Luo &mdash; Built with HTML, CSS &amp; JS.</p>
       </div>
     </div>
   </footer>
